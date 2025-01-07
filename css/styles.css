@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Logo */
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.navbar{
+    background-color: #cacaca83 !important;
+}
+.links-nav{
+    color: rgba(0, 0, 0, 0.56) !important;
+    font-size: 1.5rem;
+}
+.links-nav:hover{
+    font-weight: 600 !important;
+}
+.links-nav:focus{
+    font-weight: 600 !important;
+    text-decoration: underline;
+}   
