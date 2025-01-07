@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Logo */
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    margin: 10px;
+}
+/* NAVBAR */
 .logo {
     width: 100px;
     height: 100px;
@@ -13,7 +17,6 @@
 }
 .links-nav{
     color: rgba(0, 0, 0, 0.56) !important;
-    font-size: 1.5rem;
 }
 .links-nav:hover{
     font-weight: 600 !important;
@@ -21,4 +24,34 @@
 .links-nav:focus{
     font-weight: 600 !important;
     text-decoration: underline;
-}   
+}
+
+/* SECCION CARDS DE COMENTARIOS */
+.card-container-primary{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 12px;
+    text-align: justify;
+    background-color: aliceblue;
+}
+.card__stars{
+    width: 10rem;
+    height: 6rem;
+    object-fit: cover;
+}
+.card__container-line{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    text-align: center;
+    width: 17rem;
+}
