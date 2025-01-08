@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     max-width: fit-content;
     padding: 15px;
-    margin: 0 15px;
+    margin: 10px 15px;
     border-radius: 12px;
     text-align: justify;
     background-color: aliceblue;
@@ -54,4 +54,36 @@ h1,h2,h3,h4,h5,h6{
     padding-top: 20px;
     text-align: center;
     width: 17rem;
+}
+.icon-redes{
+    margin: 10px 15px;
+}
+.hecho-por-mi{
+    padding: 12px;
+}
+@media (min-width: 1024px) {
+    h1,h2,h3,h4,h5,h6{
+        font-size: 150%;
+    }
+
+    /* NAVBAR */
+
+    .links-nav{
+        font-size: 1.2rem;
+    }
+
+    /* SECCION CARDS DE COMENTARIOS  */
+
+    .card-container-primary{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .card-container{
+        font-size: 130%;
+    }
+    .card__stars{
+        width: 15rem;
+        height: 9rem;
+    }
 }
