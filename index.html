@@ -12,7 +12,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#"><img src="/assets/images/logo.webp" alt="Logo Toma3" class="logo"></a>
+                <a class="navbar-brand" href="#inicio"><img src="/assets/images/logo.webp" alt="Logo Toma3" class="logo"></a>
                 <!-- Botón Hamburguesa -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguesa" aria-controls="menuHamburguesa" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +21,19 @@
                 <div class="collapse navbar-collapse" id="menuHamburguesa">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active links-nav" href="#">Inicio</a>
+                            <a class="nav-link active links-nav" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links-nav" href="#">Bodas</a>
+                            <a class="nav-link links-nav" href="#bodas">Bodas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links-nav" href="#">15 Años</a>
+                            <a class="nav-link links-nav" href="#15-años">15 Años</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links-nav" href="#">Eventos corporativos</a>
+                            <a class="nav-link links-nav" href="#eventos-corporativos">Eventos corporativos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links-nav" href="#">Contácto</a>
+                            <a class="nav-link links-nav" href="#contacto">Contácto</a>
                         </li>
                     </ul>
                 </div>
@@ -41,7 +41,15 @@
         </nav>
     </header>
     <main>
-        <section id="home">       
+        <section id="inicio" class="inicio-container">
+            <div class="video-container">
+                <video src="/assets/images/background-inicio.mp4" class="video-background" autoplay loop muted playsinline></video>
+            </div>
+            <div class="inicio-text">
+                <h1>Estudio Toma 3</h1>
+                <p>La mejor opción para tus recuerdos</p>
+                <button class="btn-primary">Ver trabajos</button>
+            </div>
         </section>
         <h2>Nuestros clientes nos recomiendan</h2>
         <section class="card-container-primary">
@@ -70,6 +78,21 @@
                 </div>
             </div>
         </section>
+        <section id="contacto" class="contact-container">
+            <div>
+                <h2>Contáctanos y encuentranos en nuestras redes sociales</h2>
+                <div class="contact-container-text">
+                    <p>Escribe o llama para obtener un presupuesto</p>
+                    <button class="btn-primary">Contáctanos</button>
+                </div>
+                <div class="contact-container-icon">
+                    <img src="/assets/images/wpp-icon.png" alt="Whatsapp" class="icon-redes">
+                    <img src="/assets/images/instagram-icon.png" alt="Instagram" class="icon-redes">
+                    <img src="/assets/images/youtube-icon.png" alt="Youtube" class="icon-redes">
+                </div>
+            </div>
+            <img src="/assets/images/image-contact.webp" alt="Fotografia de contacto" class="contact-image">
+        </section>
     </main>
     <footer class="bg-dark text-white pt-4 text-center">
         <div class="container">
@@ -83,9 +106,9 @@
             <!-- Segunda columna -->
             <div class="col-md-3 text-center ">
                 <h5>Síguenos</h5>
-                <a href="#" class="text-white me-3 icon-redes"><img src="/assets/images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#" class="text-white me-3 icon-redes"><img src="/assets/images/youtube-icon.png" alt="Youtube"></a>
-                <a href="#" class="text-white me-3 icon-redes"><img src="/assets/images/gmail-icon.png" alt="Gmail"></a>
+                <a href="##" class="text-white me-3 icon-redes"><img src="/assets/images/instagram-icon.png" alt="Instagram"></a>
+                <a href="##" class="text-white me-3 icon-redes"><img src="/assets/images/youtube-icon.png" alt="Youtube"></a>
+                <a href="##" class="text-white me-3 icon-redes"><img src="/assets/images/gmail-icon.png" alt="Gmail"></a>
             </div>
         </div>
         <div class="text-center mt-3">

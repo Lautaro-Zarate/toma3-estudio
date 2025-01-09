@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
 h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin: 10px;
@@ -16,7 +20,8 @@ h1,h2,h3,h4,h5,h6{
     background-color: #cacaca83 !important;
 }
 .links-nav{
-    color: rgba(0, 0, 0, 0.56) !important;
+    color: rgba(0, 0, 0, 0.64) !important;
+    font-weight: 500;
 }
 .links-nav:hover{
     font-weight: 600 !important;
@@ -26,6 +31,28 @@ h1,h2,h3,h4,h5,h6{
     text-decoration: underline;
 }
 
+/* INICIO */
+.inicio-container{
+    height: 100vh;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Asegura que el video cubra todo el fondo */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+.inicio-text{
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 30%;
+    right: 22%;
+    font-size: 2.5rem;
+}
 /* SECCION CARDS DE COMENTARIOS */
 .card-container-primary{
     display: flex;
@@ -42,7 +69,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 10px 15px;
     border-radius: 12px;
     text-align: justify;
-    background-color: aliceblue;
+    background-color: #A2ACFF;
 }
 .card__stars{
     width: 10rem;
@@ -55,6 +82,47 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     width: 17rem;
 }
+
+/* CONTACTO */
+
+.contact-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+.contact-container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.contact-container-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+.contact-image{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.btn-primary{
+    background-color: #A2ACFF;
+    color: #f5f5f5;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+
 .icon-redes{
     margin: 10px 15px;
 }
@@ -64,6 +132,26 @@ h1,h2,h3,h4,h5,h6{
 @media (min-width: 1024px) {
     h1,h2,h3,h4,h5,h6{
         font-size: 150%;
+    }
+
+    /* INICIO */
+    .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Asegura que el video cubra todo el fondo */
+        z-index: -1; /* Coloca el video detrás del contenido */
+    }
+    .inicio-text{
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        top: 30%;
+        right: 22%;
+        font-size: 2.5rem;
     }
 
     /* NAVBAR */
@@ -85,5 +173,46 @@ h1,h2,h3,h4,h5,h6{
     .card__stars{
         width: 15rem;
         height: 9rem;
+    }
+
+    /* CONTACTO */
+
+    .contact-container{
+        display: flex;
+        flex-direction: row;
+        font-size: 130%;
+        height: 100vh;
+    }
+    .contact-container-text{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        font-size: 110%;
+        margin: 30px 0;
+    }
+    .contact-container-icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+    }
+    .contact-image{
+        width: 650px;
+        height: 650px;
+        object-fit: cover;
+    }
+    .btn-primary{
+        background-color: #A2ACFF;
+        color: #f5f5f5;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    }
+    .icon-redes{
+        width: 42px;
+        height: 42px;
+        margin-top: 10px;
     }
 }
