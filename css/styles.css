@@ -160,6 +160,10 @@ header .navbar{
     object-fit: cover;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
+.image-bodas:hover{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
 /* 15 AÑOS */
 .quince-container{
     margin: 20px 10px;
@@ -255,6 +259,10 @@ header .navbar{
     border: none;
     border-radius: 8px;
     margin-bottom: 12px;
+    transition: background 0.8s ease;
+}
+.btn-primary:hover{
+    background: linear-gradient(45deg, #5869fe, #394cf6); /* Degradado */
 }
 /* FOOTER */
 .icon-redes{
