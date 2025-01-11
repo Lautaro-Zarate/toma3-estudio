@@ -5,7 +5,7 @@
 }
 body{
     background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", serif;
 }
 h1,h2,h3,h4,h5,h6{
     text-align: center;
@@ -16,24 +16,32 @@ h1,h2,h3,h4,h5,h6{
     width: 100px;
     height: 100px;
 }
-.navbar{
+header{
+    height: 100px;
+}
+header .navbar{
     background-color: #cacaca83 !important;
+    position: fixed;
+    width: 100%;
 }
 .links-nav{
     color: rgba(0, 0, 0, 0.64) !important;
-    font-weight: 500;
+    font-weight: 600;
 }
 .links-nav:hover{
-    font-weight: 600 !important;
+    font-weight: 800 !important;
 }
 .links-nav:focus{
-    font-weight: 600 !important;
+    font-weight: 800 !important;
     text-decoration: underline;
 }
-
 /* INICIO */
 .inicio-container{
     height: 100vh;
+    width: 100%;
+}
+.parrafo-inicio{
+    font-family: "Playwrite AU SA", serif;;
 }
 .video-background {
     position: absolute;
@@ -50,8 +58,136 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     text-align: center;
     top: 30%;
-    right: 22%;
-    font-size: 2.5rem;
+    right: 0%;
+    font-size: 1rem;
+}
+/* BODAS */
+.boda-container{
+    height: auto;
+    margin: 20px 10px;
+    padding: 15px;
+    max-width: max-content;
+}
+.images-container {
+    display: flex;
+    flex-direction: column;
+}
+.title-section{
+    font-size: 42px;
+    border-bottom: 1px solid #A2ACFF;
+    padding: 10px 0;
+}
+.parrafo-bodas{
+    font-size: 15px;
+}
+.subtitle-section{
+    text-align: start;
+}
+.grid-uno{
+    display: grid;
+    grid-template-areas: "f1 f2 f2";
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.grid-dos{
+    display: grid;
+    grid-template-areas: "f3 f4 f5";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+    gap: 10px;
+}
+.grid-tres{
+    display: grid;
+    grid-template-areas: "f6 f6 f7";
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.grid-cuatro{
+    display: grid;
+    grid-template-areas: "f8 f9 f10";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
+    gap: 10px;
+}
+.grid-cinco{
+    display: grid;
+    grid-template-areas: "f11 f12 f12";
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+.f1{
+    grid-area: f1;
+}
+.f2{
+    grid-area: f2;
+}
+.f3{
+    grid-area: f3;
+}
+.f4{
+    grid-area: f4;
+}
+.f5{
+    grid-area: f5;
+}
+.f6{
+    grid-area: f6;
+}
+.f7{
+    grid-area: f7;
+}
+.f8{
+    grid-area: f8;
+}
+.f9{
+    grid-area: f9;
+}
+.f10{
+    grid-area: f10;
+}
+.f11{
+    grid-area: f11;
+}
+.f12{
+    grid-area: f12;
+}
+.image-bodas{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+/* 15 AÑOS */
+.quince-container{
+    margin: 20px 10px;
+    padding: 15px;
+    height: auto;
+    max-width:max-content;
+}
+.image-quinceaños{
+    width: 350px;
+    height: 350px;
+}
+.container-quince-primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+.container-quince-secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 130%;
+    text-align: justify;
 }
 /* SECCION CARDS DE COMENTARIOS */
 .card-container-primary{
@@ -70,6 +206,8 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 12px;
     text-align: justify;
     background-color: #A2ACFF;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    font-size: 12px;
 }
 .card__stars{
     width: 10rem;
@@ -82,9 +220,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     width: 17rem;
 }
-
 /* CONTACTO */
-
 .contact-container{
     display: flex;
     flex-direction: column-reverse;
@@ -120,9 +256,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 8px;
     margin-bottom: 12px;
 }
-
 /* FOOTER */
-
 .icon-redes{
     margin: 10px 15px;
 }
@@ -132,9 +266,13 @@ h1,h2,h3,h4,h5,h6{
 @media (min-width: 1024px) {
     h1,h2,h3,h4,h5,h6{
         font-size: 150%;
+        margin-bottom: 15px;
     }
-
     /* INICIO */
+    .inicio-container{
+        height: 100vh;
+        width: 100%;
+    }
     .video-background {
         position: absolute;
         top: 0;
@@ -153,30 +291,150 @@ h1,h2,h3,h4,h5,h6{
         right: 22%;
         font-size: 2.5rem;
     }
-
+    .inicio-text button{
+        font-size: 1.3rem;
+        padding: 10px 30px;
+    }
     /* NAVBAR */
-
     .links-nav{
         font-size: 1.2rem;
     }
-
+    /* BODAS */
+    .boda-container{
+        width: 100%;
+        height: auto;
+        margin: 20px 10px;
+        font-size: 120%;
+        padding: 35px;
+    }
+    .images-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafo-bodas{font-size: 100%;}
+    .grid-uno{
+        width: 100%;
+        display: grid;
+        grid-template-areas: "f1 f2 f2";
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+    }
+    .grid-dos{
+        display: grid;
+        grid-template-areas: "f3 f4 f5";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .grid-tres{
+        display: grid;
+        grid-template-areas: "f6 f6 f7";
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+    .grid-cuatro{
+        display: grid;
+        grid-template-areas: "f8 f9 f10";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .grid-cinco{
+        display: grid;
+        grid-template-areas: "f11 f12 f12";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    .f1{
+        grid-area: f1;
+    }
+    .f2{
+        grid-area: f2;
+    }
+    .f3{
+        grid-area: f3;
+    }
+    .f4{
+        grid-area: f4;
+    }
+    .f5{
+        grid-area: f5;
+    }
+    .f6{
+        grid-area: f6;
+    }
+    .f7{
+        grid-area: f7;
+    }
+    .f8{
+        grid-area: f8;
+    }
+    .f9{
+        grid-area: f9;
+    }
+    .f10{
+        grid-area: f10;
+    }
+    .f11{
+        grid-area: f11;
+    }
+    .f12{
+        grid-area: f12;
+    }
+    .image-bodas{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        box-shadow: 1px 10px 20px 10px rgba(0, 0, 0, 0.2)
+    }
+    /* 15 AÑOS */
+    .quince-container{
+        margin: 20px px;
+        padding: 15px;
+        height: auto;
+    }
+    .image-quinceaños{
+        width: 700px;
+        height: 700px;
+    }
+    .container-quince-primary{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 12px;
+    }
+    .container-quince-secondary{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        font-size: 130%;
+        text-align: justify;
+    }
     /* SECCION CARDS DE COMENTARIOS  */
-
+    .title-cards{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
     .card-container-primary{
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
     }
     .card-container{
-        font-size: 130%;
+        font-size: 105%;
+        color: aliceblue;
     }
     .card__stars{
         width: 15rem;
         height: 9rem;
     }
-
     /* CONTACTO */
-
     .contact-container{
         display: flex;
         flex-direction: row;
