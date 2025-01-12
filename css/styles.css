@@ -67,13 +67,14 @@ header .navbar{
     height: auto;
     margin: 20px 10px;
     padding: 15px;
-    max-width: max-content;
+    /* max-width: max-content; */
+    width: 100%;
 }
 .images-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* width: 100%; */
+    width: 100%;
 }
 .title-section{
     font-size: 42px;
@@ -142,6 +143,7 @@ header .navbar{
 .quince-container{
     margin: 20px 10px;
     padding: 15px;
+    width: 100%;
     height: auto;
     max-width:max-content;
 }
@@ -179,8 +181,8 @@ header .navbar{
     width: 100%;
 }
 .image-mitzva{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 .container-mitzva-secondary{
