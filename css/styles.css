@@ -80,7 +80,7 @@ header .navbar{
     padding: 10px 0;
 }
 .parrafo-bodas{
-    font-size: 15px;
+    font-size: 18px;
 }
 .subtitle-section{
     text-align: start;
@@ -128,7 +128,8 @@ header .navbar{
 }
 .image-bodas{
     width: 100%;
-    height: 250px;
+    height: 550px;
+    padding: 0 10px;
     object-fit: cover;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
@@ -165,6 +166,25 @@ header .navbar{
     padding: 10px;
     font-size: 130%;
     text-align: justify;
+}
+/* BAR MITZVA */
+.container-mitzva-primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    width: 100%;
+}
+.image-mitzva{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.container-mitzva-secondary{
+    padding: 20px;
+    font-size: 20px;
 }
 /* SECCION CARDS DE COMENTARIOS */
 .card-container-primary{
@@ -296,6 +316,7 @@ header .navbar{
     .images-container {
         display: flex;
         flex-direction: column;
+        padding: 0px 20px;
     }
     .parrafo-bodas{
         font-size: 100%;
@@ -404,6 +425,26 @@ header .navbar{
         padding: 10px;
         font-size: 130%;
         text-align: justify;
+    }
+    /* BAR MITZVA */
+    .container-mitzva-primary{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        width: 100%;
+    }
+    .image-mitzva{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        /* padding: 20px; */
+    }
+    .container-mitzva-secondary{
+        padding: 20px;
+        font-size: 20px;
     }
     /* SECCION CARDS DE COMENTARIOS  */
     .title-cards{
