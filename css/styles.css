@@ -5,11 +5,12 @@
 }
 body{
     background-color: #f5f5f5;
-    font-family: "Montserrat", serif;
+    font-family: "Crimson Text", serif;
 }
 h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin: 10px;
+    font-family: "Cormorant", serif;
 }
 /* NAVBAR */
 .logo {
@@ -71,6 +72,7 @@ header .navbar{
 .images-container {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .title-section{
     font-size: 42px;
@@ -83,39 +85,9 @@ header .navbar{
 .subtitle-section{
     text-align: start;
 }
-.grid-uno{
-    display: grid;
-    grid-template-areas: "f1 f2 f2";
-    grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-.grid-dos{
-    display: grid;
-    grid-template-areas: "f3 f4 f5";
-    grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
-    gap: 10px;
-}
-.grid-tres{
-    display: grid;
-    grid-template-areas: "f6 f6 f7";
-    grid-template-rows: auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-}
-.grid-cuatro{
-    display: grid;
-    grid-template-areas: "f8 f9 f10";
-    grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr));
-    gap: 10px;
-}
-.grid-cinco{
-    display: grid;
-    grid-template-areas: "f11 f12 f12";
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: auto auto;
+.grid-uno, .grid-dos, .grid-tres, .grid-cuatro, .grid-cinco{
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 .f1{
@@ -172,8 +144,9 @@ header .navbar{
     max-width:max-content;
 }
 .image-quinceaños{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 .container-quince-primary{
     display: flex;
@@ -197,26 +170,31 @@ header .navbar{
 .card-container-primary{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 .card-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: fit-content;
+    max-width: 100%;
+    height: 40rem;
     padding: 15px;
-    margin: 10px 15px;
+    margin: 10px 10px;
     border-radius: 12px;
     text-align: justify;
-    background-color: #A2ACFF;
+    background-color: #fff;
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
     font-size: 12px;
 }
+.card-container p{
+    color: rgba(0, 0, 0, 0.675);
+}
 .card__stars{
-    width: 10rem;
-    height: 6rem;
-    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 .card__container-line{
     border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -319,7 +297,9 @@ header .navbar{
         display: flex;
         flex-direction: column;
     }
-    .parrafo-bodas{font-size: 100%;}
+    .parrafo-bodas{
+        font-size: 100%;
+    }
     .grid-uno{
         width: 100%;
         display: grid;
@@ -400,13 +380,14 @@ header .navbar{
     }
     /* 15 AÑOS */
     .quince-container{
-        margin: 20px px;
+        margin: 20px;
         padding: 15px;
         height: auto;
     }
     .image-quinceaños{
         width: 700px;
         height: 700px;
+        object-fit: cover;
     }
     .container-quince-primary{
         display: flex;
@@ -433,10 +414,12 @@ header .navbar{
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
+        gap: 10px;
     }
     .card-container{
-        font-size: 105%;
-        color: aliceblue;
+        max-width: 32%;
+        height: 40rem;
+        font-size: 15px;
     }
     .card__stars{
         width: 15rem;
