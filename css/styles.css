@@ -170,6 +170,10 @@ header .navbar{
     font-size: 130%;
     text-align: justify;
 }
+/* EVENTOS CORPORATIVOS */
+.eventos-corporativos-container{
+    margin: 20px 10px;
+}
 /* BAR MITZVA */
 .container-mitzva-primary{
     display: flex;
