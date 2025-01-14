@@ -7,6 +7,27 @@ body{
     background-color: #f5f5f5;
     font-family: "Crimson Text", serif;
 }
+#floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #3dfb3689;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.icon-redes-button{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+#floatingButton:hover {
+    transform: scale(1.2);
+}
 h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin: 10px;
@@ -274,6 +295,7 @@ header .navbar{
 /* FOOTER */
 .icon-redes{
     margin: 10px 15px;
+    z-index: 6;
 }
 .hecho-por-mi{
     padding: 12px;
@@ -513,5 +535,10 @@ header .navbar{
         width: 42px;
         height: 42px;
         margin-top: 10px;
+    }
+    .icon-redes-button{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
     }
 }
