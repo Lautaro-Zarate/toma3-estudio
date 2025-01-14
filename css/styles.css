@@ -45,6 +45,7 @@ header .navbar{
     background-color: #cacaca83 !important;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 .links-nav{
     color: rgba(0, 0, 0, 0.64) !important;
@@ -300,6 +301,19 @@ header .navbar{
 .hecho-por-mi{
     padding: 12px;
 }
+.iframe-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.iframe-container-secondary h3{
+    font-size: 27px;
+}
+iframe{
+    width: 100%;
+}
 @media (min-width: 1024px) {
     h1,h2,h3,h4,h5,h6{
         font-size: 150%;
@@ -342,12 +356,12 @@ header .navbar{
         height: auto;
         margin: 20px 10px;
         font-size: 120%;
-        padding: 35px;
+        /* padding: 35px; */
     }
     .images-container {
         display: flex;
         flex-direction: column;
-        padding: 0px 20px;
+        padding: 0px 10px;
     }
     .parrafo-bodas{
         font-size: 100%;
@@ -433,12 +447,12 @@ header .navbar{
     /* 15 AÑOS */
     .quince-container{
         margin: 20px;
-        padding: 15px;
+        /* padding: 15px; */
         height: auto;
     }
     .image-quinceaños{
-        width: 700px;
-        height: 700px;
+        width: 600px;
+        height: 600px;
         object-fit: cover;
     }
     .container-quince-primary{
@@ -476,6 +490,10 @@ header .navbar{
     .container-mitzva-secondary{
         padding: 20px;
         font-size: 20px;
+    }
+    /* EVENTOS CORPORATIVOS */
+    .eventos-corporativos-container{
+        padding: 0;
     }
     /* SECCION CARDS DE COMENTARIOS  */
     .title-cards{
@@ -540,5 +558,19 @@ header .navbar{
         width: 60px;
         height: 60px;
         object-fit: cover;
+    }
+    .iframe-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .iframe-container-secondary h3{
+        font-size: 27px;
+    }
+    iframe{
+        width: 700px;
     }
 }
