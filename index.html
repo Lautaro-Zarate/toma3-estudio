@@ -50,7 +50,7 @@
         </nav>
     </header>
     <main>
-        <a href="" id="floatingButton"><img src="assets/images/wpp-icon.png" alt="Icono wpp" class="icon-redes-button"></a>
+        <button onclick="{enviarWpp()}" id="floatingButton"><img src="assets/images/wpp-icon.png" alt="Icono wpp" class="icon-redes-button"></button>
         <section id="inicio" class="inicio-container">
             <div class="video-container">
                 <video src="assets/images/background-inicio.mp4" class="video-background" autoplay loop muted playsinline></video>
@@ -58,7 +58,6 @@
             <div class="inicio-text">
                 <h1>Toma 3 estudio</h1>
                 <p class="parrafo-inicio">La mejor opción para tus recuerdos</p>
-                <button class="btn-primary">Ver trabajos</button>
             </div>
         </section>
         <section id="bodas" class="boda-container">
@@ -262,10 +261,10 @@
                 <h2>Contáctanos y encuentranos en nuestras redes sociales</h2>
                 <div class="contact-container-text">
                     <p>Escribe o llama para obtener un <b>presupuesto</b></p>
-                    <button class="btn-primary">Contáctanos</button>
+                    <button class="btn-primary" onclick="{enviarWpp()}">Contáctanos</button>
                 </div>
                 <div class="contact-container-icon">
-                    <a href="" alt="Whatsapp" target="_blank">
+                    <a onclick="{enviarWpp()}">
                         <img src="assets/images/wpp-icon.png" class="icon-redes">
                     </a>
                     <a href="https://www.instagram.com/toma3estudio/?hl=es-la" target="_blank">
@@ -298,7 +297,7 @@
         </div>
         <div class="text-center mt-3">
             <p class="mb-0">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-            <p class="hecho-por-mi">Hecho por <a target="_blank" href="https://portfolio-lautaro-zarate.vercel.app/"> - Lautaro Zarate -</a></p>
+            <p class="hecho-por-mi">Hecho por <a target="_blank" href="https://portfolio-lautaro-zarate.vercel.app/"> | Lautaro Zarate </a></p>
         </div>
         </div>
     </footer>
