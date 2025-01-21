@@ -7,6 +7,12 @@ body{
     background-color: #f5f5f5;
     font-family: "Crimson Text", serif;
 }
+b{
+    background-color: #555049;
+    color: whitesmoke;
+    padding: 3px;
+    font-size: 18px;
+}
 #floatingButton {
     position: fixed;
     bottom: 20px;
@@ -292,6 +298,15 @@ header .navbar{
 }
 .btn-primary:hover{
     background: linear-gradient(45deg, #2f2c28, #141311); /* Degradado */
+}
+/* ESPEJO MAGICO */
+.espejo-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h4-subtitle{
+    font-size: 25px;
 }
 /* FOOTER */
 .icon-redes{
