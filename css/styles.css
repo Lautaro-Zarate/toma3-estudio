@@ -304,6 +304,7 @@ header .navbar{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 30px;
 }
 .h4-subtitle{
     font-size: 25px;
@@ -430,7 +431,6 @@ iframe{
     /* 15 AÑOS */
     .quince-container{
         margin: 20px;
-        /* padding: 15px; */
         height: auto;
     }
     .image-quinceaños{
@@ -497,6 +497,22 @@ iframe{
     .card__stars{
         width: 15rem;
         height: 9rem;
+    }
+    /* ESPEJO */
+    .espejo-flex{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .espejo-section-primary{
+        width: 60%;
+        padding: 15px;
+        height: 500px;
+    }
+    .espejo-section-secondary{
+        width: 60%;
+        padding: 15px;
+        height: 500px;
     }
     /* CONTACTO */
     .contact-container{
