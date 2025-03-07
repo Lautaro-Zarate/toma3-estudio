@@ -20,15 +20,15 @@ b{
     z-index: 5;
     padding: 10px 20px;
     border: none;
-    border-radius: 50%;
+    border-radius: 45%;
     background-color: #3dfb3689;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 .icon-redes-button{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
 #floatingButton:hover {
@@ -41,8 +41,8 @@ h1,h2,h3,h4,h5,h6{
 }
 /* NAVBAR */
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 header{
     height: 100px;
